@@ -1,0 +1,19 @@
+<h2>Criando uma nova tarefa</h2>
+<form action="/tasks/create" method="post">
+  <label>Título:</label><br>
+  <input type="text" name="title" placeholder="O que precisa ser feito?" required/><br>
+
+  <label>Descrição:</label><br>
+
+  <input type="text" name="description" placeholder="Algum detalhe extra?" /><br><br>
+
+  <label for="priority">Prioridade:</label><br>
+  <select name="priority" id="priority"> 
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+        <option value="Urgente">Urgente</option>
+  </select>
+
+  <button type="submit">Criar Tarefa</button>
+</form>
