@@ -40,8 +40,8 @@ project-sequelize/
 ├── README.md
 ```
 
-### Explicações
 
+### Explicações
 `└── models/`
 * *Models:* essa pasta contempla as tabelas/entidade registradas no banco de dados. Com a ajuda do ORM `sequelize`, é possível definir com facilidade as exigências e validações dos campos. Há somente tabela de tarefa - `Task`.
 
@@ -59,6 +59,19 @@ project-sequelize/
 * *Index.js:* esse é o arquivo principal da aplicação. Contém a inicialização da conexão com o database, além de efetuar chamadas aos `models` que por sua vez, têm acesso aos métodos do ORM para interações com o banco.
 
 
+
+### Como inicializar ❓
+
+* Para rodar o projeto, deve-se iniciar o arquivo principal (`index.js`). Entretanto, há duas opções de comando:
+
+    `npm start` -> comando que tem o valor `node index.js` atribuído, então faz exatamente a mesma coisa que o comando a abaixo. A vantagem é que ele pode ser personalizável. Um exemplo é se caso eu quisesse iniciar o index.js com uma flag.
+
+    `node index.js` -> comando default que inicia o projeto.
+
+* Observação: Não é preciso reiniciar o projeto toda vez, como o projeto utiliza o `nodemon`, que reinicia o código automaticamente quando há mudanças no mesmo.
+
+
 ### Autores 👾
 * Laura 3°E
 * Ryan 3°E
+
